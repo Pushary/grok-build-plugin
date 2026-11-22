@@ -32,13 +32,13 @@ the server removes secrets it recognises from it before storing it.
 
 ## Optional hooks are not part of this plugin
 
-The README describes `npx pushary@latest setup --agents grok`, which installs Pushary's tool-call
+The README describes `npx -y pushary@latest setup --agents grok`, which installs Pushary's tool-call
 hooks for phone approvals. The plugin does not run it. When the Pushary tools are not connected, the
 skill's setup section can have the agent inspect the machine (`uname`; whether a Pushary key is set
 in the environment or stored in `~/.pushary/config.json`, without printing it; whether Node, npm
-and the Mac app are installed), check and repair an existing install (`npx pushary@latest status`, then
+and the Mac app are installed), check and repair an existing install (`npx -y pushary@latest status`, then
 `setup` or `pair` if status says to, or the Mac app when Node is missing), or
 offer to install Pushary: the Mac app with `brew install --cask pushary/tap/pushary`, or the command
-line with `npx pushary@latest setup`, followed by `pair` or `doctor` when needed. The agent runs them
+line with `npx -y pushary@latest setup`, followed by `pair` or `doctor` when needed. The agent runs them
 as ordinary shell commands, under Grok Build's permission mode, and the skill tells it to explain
 what setup does before running it.

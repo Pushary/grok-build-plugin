@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- `pushary` skill 0.13.7, from 0.13.6: every Pushary command it gives is written `npx -y pushary@latest …`, and `npx.cmd -y pushary@latest …` in PowerShell, so npm installs the CLI without stopping to ask "Ok to proceed? (y)".
+
 ## 0.1.2
 
 - `pushary` skill 0.13.6, from 0.13.5: a risky step, such as a recursive delete, a force-push or a deploy, is no longer described as deny-only on the phone. The Pushary app approves one from 1.0.66 after Face ID or the phone's passcode. The lock screen, an older app and a workspace that requires the keyboard for risky steps still offer only deny and `defer` ("Handle on your machine"). What an agent passes and how it reads `defer` are unchanged.

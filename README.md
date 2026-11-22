@@ -25,7 +25,7 @@ The bundled `pushary` skill tells Grok when to reach you and when to stay quiet:
 | MCP server | `.mcp.json` | Connects Grok Build to Pushary's hosted MCP server at `https://pushary.com/api/mcp/mcp` |
 | Skill | `skills/pushary/SKILL.md` | Instructions for when to ask, when to notify and how to wait for an answer |
 
-The plugin adds no hooks, commands, agents, scripts or dependencies. When the Pushary tools are not connected, the skill's setup section can have Grok look for an existing Pushary install (whether a Pushary key is set or stored, without printing it, whether Node and npm are installed, and whether the Mac app is), check and repair one it finds (`npx pushary@latest status`, then `setup` or `pair` if status says to, or the Mac app when Node is missing), or offer to install Pushary: the Mac app with `brew install --cask pushary/tap/pushary`, or the command line with `npx pushary@latest setup`, followed by `pair` or `doctor` when needed. Grok runs these like any other command, under your permission mode, and the skill tells it to explain setup before running it.
+The plugin adds no hooks, commands, agents, scripts or dependencies. When the Pushary tools are not connected, the skill's setup section can have Grok look for an existing Pushary install (whether a Pushary key is set or stored, without printing it, whether Node and npm are installed, and whether the Mac app is), check and repair one it finds (`npx -y pushary@latest status`, then `setup` or `pair` if status says to, or the Mac app when Node is missing), or offer to install Pushary: the Mac app with `brew install --cask pushary/tap/pushary`, or the command line with `npx -y pushary@latest setup`, followed by `pair` or `doctor` when needed. Grok runs these like any other command, under your permission mode, and the skill tells it to explain setup before running it.
 
 ## What connecting does
 
@@ -69,7 +69,7 @@ Answer on your phone. Grok should tell you your answer.
 This plugin lets Grok ask you. It does not stop Grok from running a command. To approve shell commands, edits and MCP calls from your phone before they run, install Pushary's hooks with the Pushary command line:
 
 ```bash
-npx pushary@latest setup --agents grok
+npx -y pushary@latest setup --agents grok
 ```
 
 Setup pairs your phone, writes Grok Build hooks to `~/.grok/hooks/pushary.json`, and adds its own `pushary` MCP server with an agent key to `~/.grok/config.toml`. Grok Build then uses that server in place of the one in this plugin, and questions it asks stay open until you answer them. Read the [Grok Build guide](https://pushary.com/docs/agents/guides/grok-build) before you run it.
