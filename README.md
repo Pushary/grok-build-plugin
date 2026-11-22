@@ -18,6 +18,27 @@ Grok Build keeps working after you walk away from the terminal. Pushary reaches 
 
 The bundled `pushary` skill tells Grok when to reach you and when to stay quiet: it asks only for decisions it cannot make itself, folds several into one question, and sends at most three pushes per task, unless you ask for more or it needs an approval to carry on.
 
+## What you get after you sign in
+
+1. Sign in and pick a plan. New customers start with a 3-day trial.
+2. Install this plugin and sign in from `/mcps` with the same account. For approvals before a command runs, also run `npx -y pushary@latest setup --agents grok` once.
+3. When Grok needs a yes or an answer, the question arrives on your phone (the Pushary app for iOS and Android), on your Mac, or in the dashboard.
+4. You answer with one tap, or type a short reply, and Grok carries on. The dashboard keeps a record of what each agent asked and what you answered.
+
+See [Grok Build notifications and phone approvals](https://pushary.com/grok-build-notifications?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme).
+
+## Plans
+
+Each plan starts with a 3-day trial for new customers. During the trial, Agent, Agent Pro and Team include 5 call minutes.
+
+| Plan | Price | What you get |
+| --- | --- | --- |
+| [Agent](https://pushary.com/pricing?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme) | $9.99 a month | One person and every AI agent they run. Approve, deny or answer from your phone or Mac. 10 call minutes a month. |
+| [Agent Pro](https://pushary.com/pricing?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme) | $19.99 a month | Everything in Agent, plus unlimited notifications, budgets and priority support. 20 call minutes a month. |
+| [Team](https://pushary.com/teams?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme) | $59 a month for 5 people, $12 for each extra person | A shared record of what your team's agents asked and who answered, with export. 60 call minutes a month. |
+
+Missed the push? Pushary can call you, by default after 2 minutes, and read the request. You approve it, say no or tell the agent what to do. Calls need a confirmed phone number and work in English, German, French and Dutch. [Phone calls](https://pushary.com/calls?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme) · [Calls for Grok Build](https://pushary.com/grok-build-phone-call?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme) · [How calls work](https://pushary.com/docs/agents/phone-calls?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme)
+
 ## What is in this plugin
 
 | Component | File | What it does |
@@ -41,7 +62,7 @@ Read the [privacy policy](https://pushary.com/privacy) for retention details.
 
 ## What you need
 
-- A paid Pushary plan for your own agents, such as Agent, Agent Pro or Team. Eligible web sign-ups get a trial; see [pricing](https://pushary.com/pricing).
+- A paid Pushary plan for your own agents, such as Agent, Agent Pro or Team. Eligible web sign-ups get a trial; see [pricing](https://pushary.com/pricing?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme).
 - The Pushary app on your phone, or the Pushary Mac app, signed in to the same account. Get them at [pushary.com/download](https://pushary.com/download).
 
 ## Install
@@ -72,7 +93,7 @@ This plugin lets Grok ask you. It does not stop Grok from running a command. To 
 npx -y pushary@latest setup --agents grok
 ```
 
-Setup pairs your phone, writes Grok Build hooks to `~/.grok/hooks/pushary.json`, and adds its own `pushary` MCP server with an agent key to `~/.grok/config.toml`. Grok Build then uses that server in place of the one in this plugin, and questions it asks stay open until you answer them. Read the [Grok Build guide](https://pushary.com/docs/agents/guides/grok-build) before you run it.
+Setup pairs your phone, writes Grok Build hooks to `~/.grok/hooks/pushary.json`, and adds its own `pushary` MCP server with an agent key to `~/.grok/config.toml`. Grok Build then uses that server in place of the one in this plugin, and questions it asks stay open until you answer them. Read the [Grok Build guide](https://pushary.com/docs/agents/guides/grok-build?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme) before you run it.
 
 ## What it does not do
 
@@ -82,9 +103,15 @@ Setup pairs your phone, writes Grok Build hooks to `~/.grok/hooks/pushary.json`,
 
 ## Support
 
-- Guide: [pushary.com/docs/agents/guides/grok-build](https://pushary.com/docs/agents/guides/grok-build)
+- Guide: [pushary.com/docs/agents/guides/grok-build](https://pushary.com/docs/agents/guides/grok-build?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme)
 - Help: [pushary.com/support](https://pushary.com/support)
 - Security reports: see [SECURITY.md](SECURITY.md)
+
+## Related repositories
+
+- [Pushary for Grok Bot](https://github.com/Pushary/grok-bot-plugin): the connector for Bots that run on Grok's cloud computer.
+- [Pushary skill](https://github.com/Pushary/pushary-skill): the skill, and `npx -y pushary@latest setup` for approval hooks in Grok Build, Claude Code, Codex and more.
+- [Pushary for Mac](https://github.com/Pushary/pushary-mac): answer from the notch on your Mac.
 
 ## License
 
