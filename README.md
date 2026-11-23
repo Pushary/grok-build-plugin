@@ -4,7 +4,7 @@
 
 <h1 align="center">Pushary for Grok Build</h1>
 
-<p align="center">Answer Grok Build from your phone, and get a push when a long task finishes or fails.</p>
+<p align="center">When Grok Build needs a decision, Pushary sends the question to your phone. Miss the push with calls enabled and Pushary can ring you. Give your answer and Grok Build continues in the same session.</p>
 
 ---
 
@@ -35,7 +35,7 @@ Each plan starts with a 3-day trial for new customers. During the trial, Agent, 
 | --- | --- | --- |
 | [Agent](https://pushary.com/pricing?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme) | $9.99 a month | One person and every AI agent they run. Approve, deny or answer from your phone or Mac. 10 call minutes a month. |
 | [Agent Pro](https://pushary.com/pricing?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme) | $19.99 a month | Everything in Agent, plus unlimited notifications, budgets and priority support. 20 call minutes a month. |
-| [Team](https://pushary.com/teams?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme) | $59 a month for 5 people, $12 for each extra person | A shared record of what your team's agents asked and who answered, with export. 60 call minutes a month. |
+| [Team](https://pushary.com/teams?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme) | $59 a month for 5 people, $12 for each extra person | Each person gets their own agent’s questions. On supported hooks, route a step such as a production deploy to the teammate who approves it. See who answered in the shared record. Includes export and 60 shared call minutes a month. |
 
 Missed the push? Pushary can call you, by default after 1 minute, and read the request. You approve it, say no or tell the agent what to do. Calls need a confirmed phone number and work in English, German, French and Dutch. [Phone calls](https://pushary.com/calls?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme) · [Calls for Grok Build](https://pushary.com/grok-build-phone-call?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme) · [How calls work](https://pushary.com/docs/agents/phone-calls?utm_source=github&utm_medium=oss-adapter&utm_campaign=grok-build-plugin&utm_content=readme)
 
